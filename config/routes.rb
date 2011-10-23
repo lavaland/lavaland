@@ -1,4 +1,8 @@
 LavalandNew::Application.routes.draw do
+  resources :events
+
+  resources :articles
+
   #get \"users\/show\"
 
   root :to => "home#index"

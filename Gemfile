@@ -40,3 +40,4 @@ gem "guard-rspec", ">= 0.4.3", :group => :development
 gem "guard-cucumber", ">= 0.6.1", :group => :development
 gem "devise", ">= 1.4.7"
 gem "frontend-helpers"
+gem "heroku"
