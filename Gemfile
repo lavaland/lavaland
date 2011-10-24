@@ -2,7 +2,12 @@ require 'rbconfig'
 HOST_OS = RbConfig::CONFIG['host_os']
 source 'http://rubygems.org'
 gem 'rails', '3.1.0'
-gem 'sqlite3'
+group :production do
+  gem 'pg'
+end
+group :development, :test do
+  gem 'sqlite3'
+end
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
   gem 'coffee-rails', "~> 3.1.0"
@@ -41,3 +46,4 @@ gem "guard-cucumber", ">= 0.6.1", :group => :development
 gem "devise", ">= 1.4.7"
 gem "frontend-helpers"
 gem "heroku"
+gem "thin"
