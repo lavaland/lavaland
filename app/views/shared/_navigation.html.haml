@@ -1,12 +1,20 @@
+%li
+  = link_to('Art  ', :controller => "articles", :action => "index", :id => "art")
+%li
+  = link_to('Photography  ', :controller => "articles", :action => "index", :id => "photography")
+%li
+  = link_to('Music  ', :controller => "articles", :action => "index", :id => "music")
+%li
+  = link_to('Reviews  ', :controller => "articles", :action => "index", :id => "review")
+%li
+  = link_to('Events  - ', :controller => "events", :action => "index", :id => "event")
 - if user_signed_in?
+  %li
+    = link_to('Edit Account  - ', edit_user_registration_path)
   %li
     = link_to('Logout', destroy_user_session_path, :method=>'delete')
 - else
   %li
-    = link_to('Login', new_user_session_path)
-- if user_signed_in?
-  %li
-    = link_to('Edit account', edit_user_registration_path)
-- else
+    = link_to('Login  - ', new_user_session_path, )
   %li
     = link_to('Sign up', new_user_registration_path)

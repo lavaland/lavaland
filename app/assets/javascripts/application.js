@@ -7,3 +7,19 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require colorbox-rails
+
+$(document).ready(function() {
+				  galleries = [];
+				  $('a[class^="gallery_1"]').each( function() {
+												 if ($.inArray($(this).attr("class"), galleries) == -1) {
+												 $(this).colorbox({
+																  rel: $(this).attr("class"),
+																  maxWidth: "95%",
+																  maxHeight: "95%"
+																  });
+												 galleries.push($(this).attr("class"));
+												 }
+												 });
+				  });
+

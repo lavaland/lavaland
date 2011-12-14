@@ -339,6 +339,10 @@ textarea {
     *vertical-align: middle; /* 3 */
 }
 
+textarea {
+    width: 500px;
+}
+
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */

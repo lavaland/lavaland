@@ -18,5 +18,9 @@
   .field
     = f.label :description
     = f.text_area :description
+  .field
+    = f.label :tags
+    = f.text_field :tag_list
+    <input type="hidden" value= "#{current_user.id}" name="user_id" />
   .actions
     = f.submit 'Save'

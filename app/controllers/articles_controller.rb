@@ -2,22 +2,27 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+	@articles = Article.tagged_with(params[:id])
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }
+	  format.js { render_to_facebox }
     end
   end
 
   # GET /articles/1
   # GET /articles/1.json
   def show
+  
+    @comment = Comment.new
     @article = Article.find(params[:id])
-
+	commentable = Article.find(params[:id])
+	@comments = commentable.comments.recent.limit(10).all
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @article }
+	  format.js { render_to_facebox }
     end
   end
 
@@ -29,6 +34,7 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @article }
+	  format.js { render_to_facebox }
     end
   end
 

@@ -16,8 +16,8 @@ h2. Dependencies
 
 To use this application, you will need:
 
-* The Ruby language (version 1.8.7 or 1.9.2)
-* Rails (version 3.0.4 or newer)
+* The Ruby language (1.9.2)
+* Rails (3.1.0)
 
 h2. Installing the Application
 

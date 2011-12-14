@@ -1,3 +1,28 @@
-= image_tag 'header.jpg'
-- @articles.each do |article|
-  %p #{link_to article.title, article}
+#homepage_article_container
+  - @articles.each do |article|
+    #home_page_article
+    .color_bar
+    #homepage_article_image_container
+      = image_tag "#{article.photo(:thumb)}"
+    #homepage_article_article_content
+      %p= link_to article.title, articles_path(article.id), :data => { :colorbox => true, :colorbox_height => '900px', :colorbox_width => '980px'}
+      %p #{article.snipit}
+#homepage_add_user_content_container
+  = link_to 'Add Article - ', new_article_path, :data => { :colorbox => true, :colorbox_height => '600px', :colorbox_width => '600px'}
+  = link_to 'Add Event', new_event_path, :data => { :colorbox => true, :colorbox_height => '400px', :colorbox_width => '400px'}
+#homepage_events_container
+  %h3 Upcoming Events
+  - @events.each do |event|
+    %tr
+      %td= event.title
+      %td= event.location
+      %td= event.date_and_time
+      %td= link_to 'Read More', event
+#homepage_links_container
+  %h3 Links
+  %ul
+    %li= link_to 'Aquabear Legion', "http://www.aquabearlegion.com/"
+    %li= link_to 'ARTS/West', "http://artswest.blogspot.com/"
+    %li= link_to 'Dairy Barn', "http://www.dairybarn.org/"
+    %li= link_to 'Kennedy Museum of Art', "http://www.ohio.edu/museum/"
+    %li= link_to 'Gnarly As I Wanna Be', "http://gnarlyasiwannabe.com/"

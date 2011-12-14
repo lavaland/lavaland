@@ -1,11 +1,16 @@
-= form_for @article do |f|
+%p= @curent_user
+
+= form_for @article, :html => { :multipart => true } do |f|
   -if @article.errors.any?
     #error_explanation
       %h2= "#{pluralize(@article.errors.count, "error")} prohibited this article from being saved:"
       %ul
         - @article.errors.full_messages.each do |msg|
           %li= msg
-
+  
+  .field
+    = f.label :photo
+    = f.file_field :photo
   .field
     = f.label :title
     = f.text_field :title
@@ -14,9 +19,13 @@
     = f.text_area :snipit
   .field
     = f.label :content
-    = f.text_area :content
+    = f.cktext_area :content, :toolbar => 'Full', :width => 600, :height => 400
   .field
     = f.label :published
     = f.check_box :published
+  .field
+    = f.label :tags
+    = f.text_field :tag_list
+    <input type="hidden" value= "#{current_user.object_id}" name="user_id" />
   .actions
     = f.submit 'Save'

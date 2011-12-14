@@ -1,3 +1,78 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// ARTICLE ---------------------------------------
+
+#homepage_article_container{
+  width: 620px;
+  height: 280px;
+  float: left;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.color_bar{
+  width: 10px;
+  height: 150px;
+  background: #91c44a;
+  float: left;
+  margin: 50px 0px 0px 0px;
+}
+
+#homepage_article_image_container{
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  float: left;
+  margin: 0px auto;
+}
+
+#homepage_article_article_content{
+  padding: 10px 10px 0px 20px;
+  
+}
+
+#homepage_article_article_content a{
+}
+
+// USER CONTENT ---------------------------------
+
+#homepage_add_user_content_container{
+  width: 290px;
+  height: auto;
+  float: left;
+  padding: 10px;
+  margin: 10px 0px 0px 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+#homepage_add_user_content_container a{
+  color: #d2232a;
+}
+
+// EVENTS ---------------------------------------
+
+#homepage_events_container{
+  background: #ccc;
+  width: 280px;
+  height: auto;
+  float: left;
+  padding: 10px;
+  margin: 10px 10px 0px 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+// LINKS ---------------------------------------
+
+#homepage_links_container{
+  width: 300px;
+  height: 300px;
+  float: right;
+  padding: 10px;
+  margin: 10px 0px 0px 40px;
+}

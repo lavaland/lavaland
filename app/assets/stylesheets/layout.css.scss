@@ -46,13 +46,11 @@
 		copy your FontName into code below and remove
 		comment brackets */
 
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
+@font-face{ 
+	font-family: 'FranklinM54';
+	src: url('franklin_m54-webfont.eot');
+	src: url('franklin_m54-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('franklin_m54-webfont.woff') format('woff'),
+	     url('franklin_m54-webfont.ttf') format('truetype'),
+	     url('franklin_m54-webfont.svg#webfont') format('svg');
+}

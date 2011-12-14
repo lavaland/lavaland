@@ -1,7 +1,7 @@
 require 'rbconfig'
 HOST_OS = RbConfig::CONFIG['host_os']
 source 'http://rubygems.org'
-gem 'rails', '3.1.0'
+gem 'rails', '3.1.1'
 group :production do
   gem 'pg'
 end
@@ -48,3 +48,9 @@ gem "frontend-helpers"
 gem "heroku"
 gem "thin"
 gem "rake"
+gem "colorbox-rails"
+gem 'acts-as-taggable-on', '~>2.1.0'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'ckeditor'
+gem 'paperclip'
+gem 'acts_as_commentable'

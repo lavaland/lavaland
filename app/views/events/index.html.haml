@@ -1,14 +1,6 @@
 %h1 Listing events
 
 %table
-  %tr
-    %th Title
-    %th Location
-    %th Date and time
-    %th Description
-    %th
-    %th
-    %th
 
   - @events.each do |event|
     %tr
@@ -16,10 +8,6 @@
       %td= event.location
       %td= event.date_and_time
       %td= event.description
-      %td= link_to 'Show', event
-      %td= link_to 'Edit', edit_event_path(event)
-      %td= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete
-
+      %td= link_to 'Read More', event
 %br
 
-= link_to 'New Event', new_event_path

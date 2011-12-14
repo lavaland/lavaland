@@ -5,24 +5,183 @@
  *= require_self
  *= require_tree . 
 */
+
+//= require colorbox-rails
+
+body{
+    margin: 0px 0px 0px 0px;
+	font-family: 'FranklinM54';
+	font-weight: normal;
+	font-style: normal;
+	background-image: url('bgimg.jpeg')
+}
+
+#page {
+    width: 960px;
+	height: auto;
+	background: #fff;
+	margin: 0px auto;
+	padding: 0px 0px 120px 0px;
+	-webkit-box-shadow: 0px 5px 20px 3px #000000;
+    -moz-box-shadow: 0px 5px 20px 3px #000000;
+    box-shadow: 0px 5px 20px 3px #000000;
+}
+		
+h1, h2, h3 {
+	font-weight: normal;
+	font-style: normal;
+	font-family: FranklinM54;
+	letter-spacing: 0;
+	font-size: 45px;
+}
+
+.container {
+  padding: 5px;
+}
+
+
+a {
+  font-family: FranklinM54;
+  font-size: 25px;
+  text-decoration: none;
+  color: #c2c4c5;
+  &:visited {
+    color: #c2c4c5; }
+  &:hover {
+    color: #c2c4c5;} 
+}
+
+
+/* LOGO ------------------------------------------------- */
+
+#logo {
+    font-family: FranklinM54;
+	letter-spacing: 0;
+	font-size: 262px;
+	height: 263px;
+	width: 960px;
+	margin: 80px auto -180px 4px;
+	float: left;
+} 
+	
+#logo a {
+    font-size: 262px;
+	text-decoration: none;
+	color: #d2232a;
+  &:visited {
+    color: #d2232a; }
+  &:hover {
+    color: #d2232a;
+	background-color: #fff;}
+
+} 
+
+#sub_logo_container{
+	font-family: FranklinM54;
+	letter-spacing: 0;
+	height: 27px;
+	width: 960px;
+	color: #2d2d2d;
+	margin: 0px auto;
+	float: left;
+}
+
+#sub_logo_left{
+	font-family: FranklinM54;
+	letter-spacing: 5;
+	font-size: 34px;
+	height: 27px;
+	width: 475px;
+	color: #2d2d2d;
+	float: left;
+	padding-left: 5px;
+}
+
+#sub_logo_right{
+	font-family: FranklinM54;
+	letter-spacing: 5;
+	font-size: 34px;
+	height: 27px;
+	width: 475px;
+	color: #2d2d2d;
+	float: left;
+	text-align: right;
+	padding-right: 5px;
+}
+
+/* NAVIGATION ------------------------------------------------ */
+
+header nav{
+  background: #7d7e7d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+  background: linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+  height: 20px;
+  padding: 5px;
+  float: left;
+  width: 950px;
+}
+
 header nav ul {
   list-style: none;
-  margin: 0 0 2em;
+  margin: 0px auto;
+  letter-spacing: 3;
   padding: 0;
+  text-align: right;
 }
+
 header nav ul li {
   display: inline;
 }
+
+
+
+/* FLASH ALERTS ---------------------------------------------- */
+
 #flash_notice, #flash_alert {
+  position: absolute;
+  top: 0;
+  left: 5;
   padding: 5px 8px;
   margin: 10px 0;
 }
 #flash_notice {
-  background-color: #CFC;
-  border: solid 1px #6C6;
+  background-color: #202020;
+  border: solid 1px #000;
+  -webkit-box-shadow: 0px 0px 20px 3px #000;
+  -moz-box-shadow: 0px 0px 20px 3px #000;
+  box-shadow: 0px 0px 20px 3px #000;
 }
 #flash_alert {
-  background-color: #FCC;
-  border: solid 1px #C66;
+  background-color: #202020;
+  border: solid 1px #000;
+  -webkit-box-shadow: 0px 0px 20px 3px #000;
+  -moz-box-shadow: 0px 0px 20px 3px #000;
+  box-shadow: 0px 0px 20px 3px #000;
 }
 
+/* FOOTER ---------------------------------------------------- */
+
+footer {
+  position: absolute;
+  bottom: -120;
+  width: 960px;
+  height: 150px;
+  background-color: #202020;
+}
+
+#footer_col_1{
+
+}
+
+#footer_col_1{
+
+}
+
+#footer_col_1{
+
+}

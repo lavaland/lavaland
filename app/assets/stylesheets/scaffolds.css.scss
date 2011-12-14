@@ -1,47 +1,49 @@
 body {
-  background-color: #fff;
+  background-color: #ccc;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px; }
+  line-height: 18px;
+}
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px; }
+  line-height: 18px;
+  font-size: 16px;
+}
 
 pre {
   background-color: #eee;
   padding: 10px;
-  font-size: 11px; }
+  font-size: 18px; }
 
 a {
-  color: #000;
+  font-family: FranklinM54;
+  font-size: 25px;
+  text-decoration: none;
+  color: #c2c4c5;
   &:visited {
-    color: #666; }
+    color: #c2c4c5; }
   &:hover {
-    color: #fff;
-    background-color: #000; } }
+    color: #c2c4c5;
+} }
 
 div {
   &.field, &.actions {
     margin-bottom: 10px; } }
 
 #notice {
-  color: green; }
+  color: #d2232a; }
 
 .field_with_errors {
   padding: 2px;
-  background-color: red;
+  background-color: #d2232a;
   display: table; }
 
 #error_explanation {
   width: 450px;
-  border: 2px solid red;
+  border: 2px solid #d2232a;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  background-color: #f0f0f0;
+  background-color: #ccc;
   h2 {
     text-align: left;
     font-weight: bold;
